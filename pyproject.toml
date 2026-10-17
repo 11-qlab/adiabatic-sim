@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adiabatic-sim"
+version = "0.1.0"
+authors = [{name = "11-qlab"}]
+description = "Reversible and adiabatic computing: energy analysis vs CMOS"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+keywords = ["reversible computing", "adiabatic", "Landauer limit", "energy efficiency"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy", "matplotlib"]
+
+[project.urls]
+Homepage = "https://github.com/11-qlab/adiabatic-sim"
+
+[project.scripts]
+adiabatic-sim = "adiabatic_sim.cli:main"
